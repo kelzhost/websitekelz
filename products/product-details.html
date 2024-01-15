@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Product List</title>
+</head>
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-gray-800 p-6">
+    <div class="flex items-center space-x-4">
+        <a href="index.html" class="flex items-center">
+            <img src="images/logo.jpg" alt="Your Logo" class="h-8">
+            <div class="text-white text-2xl font-bold">Your Website</div>
+        </a>
+    </div>
+</nav>
+
+<!-- Product List Section -->
+<section class="py-16">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8">Product List</h2>
+
+        <!-- Product Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Product Card: VPS -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">VPS</h3>
+                <img src="images/vps-thumbnail.jpg" alt="VPS Thumbnail" class="mb-4 mx-auto h-32">
+                <p class="text-gray-700">High-performance Virtual Private Servers.</p>
+                <a href="product-details.html?product=vps" class="mt-4 inline-block bg-blue-500 text-white rounded-full py-2 px-6 hover:bg-blue-700 transition duration-300">View Product</a>
+            </div>
+
+            <!-- Product Card: RDP -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">RDP</h3>
+                <img src="images/rdp-thumbnail.jpg" alt="RDP Thumbnail" class="mb-4 mx-auto h-32">
+                <p class="text-gray-700">Remote Desktop access for your needs.</p>
+                <a href="product-details.html?product=rdp" class="mt-4 inline-block bg-blue-500 text-white rounded-full py-2 px-6 hover:bg-blue-700 transition duration-300">View Product</a>
+            </div>
+
+            <!-- Product Card: Domain -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Domain</h3>
+                <img src="images/domain-thumbnail.jpg" alt="Domain Thumbnail" class="mb-4 mx-auto h-32">
+                <p class="text-gray-700">Register your unique domain name.</p>
+                <a href="product-details.html?product=domain" class="mt-4 inline-block bg-blue-500 text-white rounded-full py-2 px-6 hover:bg-blue-700 transition duration-300">View Product</a>
+            </div>
+
+            <!-- Product Card: Pterodactyl -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Pterodactyl</h3>
+                <img src="images/pterodactyl-thumbnail.jpg" alt="Pterodactyl Thumbnail" class="mb-4 mx-auto h-32">
+                <p class="text-gray-700">Manage your game servers with Pterodactyl.</p>
+                <a href="product-details.html?product=pterodactyl" class="mt-4 inline-block bg-blue-500 text-white rounded-full py-2 px-6 hover:bg-blue-700 transition duration-300">View Product</a>
+            </div>
+
+            <!-- Product Card: Script -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Script</h3>
+                <img src="images/script-thumbnail.jpg" alt="Script Thumbnail" class="mb-4 mx-auto h-32">
+                <p class="text-gray-700">Powerful scripts for your projects.</p>
+                <a href="product-details.html?product=script" class="mt-4 inline-block bg-blue-500 text-white rounded-full py-2 px-6 hover:bg-blue-700 transition duration-300">View Product</a>
+            </div>
+
+            <!-- Product Card: Reseller -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Reseller</h3>
+                <img src="images/reseller-thumbnail.jpg" alt="Reseller Thumbnail" class="mb-4 mx-auto h-32">
+                <p class="text-gray-700">Become a reseller for our services.</p>
+                <a href="product-details.html?product=reseller" class="mt-4 inline-block bg-blue-500 text-white rounded-full py-2 px-6 hover:bg-blue-700 transition duration-300">View Product</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for mobile menu and other functionality ... -->
+
+</body>
+</html>

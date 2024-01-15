@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=no">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Your Website</title>
+    <style>
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-gray-800 p-6">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="text-white text-2xl font-bold">WEBSITE KELZHOST</div>
+        <div class="hidden md:flex space-x-4">
+            <a href="https://wa.me/6283847830654" class="text-white hover:text-gray-300 transition duration-300">wabot</a>
+            <a href="https://kelzhost.jasa-panel-murah.my.id" class="text-white hover:text-gray-300 transition duration-300">panel</a>
+            <a href="product2.html" class="text-white hover:text-gray-300 transition duration-300">product</a>
+            <a href="https://wa.me/6287787411704" class="text-white hover:text-gray-300 transition duration-300">Contact</a>
+        </div>
+        <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Product Details Section -->
+<section class="py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Product Details</h2>
+        <p class="text-gray-700">Explore our products and get started today.</p>
+
+        <!-- Product List -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <!-- Product Card: VPS -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-5">VPS</h3>
+                <img src="https://telegra.ph/file/fa6600a6e2db399930102.jpg" alt="VPS Logo" class="mb-4 mx-auto h-16">
+                <p class="text-gray-700">High-performance Virtual Private Servers.</p>
+                <a href="product-details-vps.html" class="mt-4 inline-block bg-blue-500 text-white rounded-full py-2 px-6 hover:bg-blue-700 transition duration-300">View Product</a>
+            </div>
+
+            <!-- Product Card: RDP -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">RDP</h3>
+                <img src="https://telegra.ph/file/9e064d1d5de8556f14fbb.jpg" alt="RDP Logo" class="mb-4 mx-auto h-16">
+                <p class="text-gray-700">Remote Desktop access for your needs.</p>
+                <a href="product-details-rdp.html" class="mt-4 inline-block bg-blue-500 text-white rounded-full py-2 px-6 hover:bg-blue-700 transition duration-300">View Product</a>
+            </div>
+
+            <!-- Product Card: Domain -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Domain</h3>
+                <img src="https://telegra.ph/file/c78cf937a79d8309d6a98.jpg" alt="Domain Logo" class="mb-4 mx-auto h-16">
+                <p class="text-gray-700">Register your domain with us.</p>
+                <a href="product-details-domain.html" class="mt-4 inline-block bg-blue-500 text-white rounded-full py-2 px-6 hover:bg-blue-700 transition duration-300">View Product</a>
+            </div>
+
+            <!-- Product Card: Script -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Script</h3>
+                <img src="https://telegra.ph/file/fbbfbd1afc82bcb1f5bba.jpg" alt="Script Logo" class="mb-4 mx-auto h-16">
+                <p class="text-gray-700">Custom scripts for your website.</p>
+                <a href="product-details-script.html" class="mt-4 inline-block bg-blue-500 text-white rounded-full py-2 px-6 hover:bg-blue-700 transition duration-300">View Product</a>
+            </div>
+
+            <!-- Product Card: Reseller -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Pterodactyl</h3>
+                <img src="https://telegra.ph/file/407fa332922107b47f8e0.jpg" alt="Reseller Logo" class="mb-4 mx-auto h-16">
+                <p class="text-gray-700">Become a reseller with exclusive benefits.</p>
+                <a href="product-details-reseller.html" class="mt-4 inline-block bg-blue-500 text-white rounded-full py-2 px-6 hover:bg-blue-700 transition duration-300">View Product</a>
+            </div>
+            
+             <!-- Product Card: Reseller -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Jasa install pterodactyl</h3>
+                <img src="https://telegra.ph/file/407fa332922107b47f8e0.jpg" alt="Reseller Logo" class="mb-4 mx-auto h-16">
+                <p class="text-gray-700">Become a reseller with exclusive benefits.</p>
+                <a href="product-details-jasainstallpterodactyl.html" class="mt-4 inline-block bg-blue-500 text-white rounded-full py-2 px-6 hover:bg-blue-700 transition duration-300">View Product</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popup -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2 id="popup-title"></h2>
+        <p>This is the detailed information about the selected product.</p>
+    </div>
+</div>
+
+<!-- JavaScript for mobile menu and popup ... -->
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.hidden.md\\:flex');
+    const popup = document.getElementById('popup');
+    const popupTitle = document.getElementById('popup-title');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('hidden');
+    });
+
+    function openPopup(title) {
+        popupTitle.textContent = title;
+        popup.style.display = 'flex';
+    }
+
+    function closePopup() {
+        popup.style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
